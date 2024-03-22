@@ -1,0 +1,22 @@
+body {
+  background: rgba(216, 150, 133, 0.8);
+  overflow: hidden;
+}
+
+body .about-page {
+  margin: 32vh;
+  justify-content: center;
+}
+
+.about-page header{
+  text-align: center;
+}
+
+img {
+  height: 52vh;
+}
+
+main .about-par {
+  margin: 13vh;
+  width: 60vh;
+}
