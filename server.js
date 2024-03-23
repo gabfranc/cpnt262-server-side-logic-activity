@@ -21,12 +21,12 @@ const htmlListener = (req, res) => {
   res.end(data);
 };
 
-//TODO: split the logic into different functions for the server
+//DONE: split the logic into different functions for the server
 
 const server = http.createServer((req, res) => {
   let filePath = "." + req.url;
 
-  // create support for a 404 page using the else statement.
+  // DONE: create support for a 404 page using the else statement.
 
   if (filePath === "./about.html"){
     filePath ="./about.html";
@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
   }
 
   fs.readFile(filePath, (error, content) => {
-    //TODO: handle errors
+    //DONE: handle errors
     res.writeHead(200, {"Content-Type": "text/html"});
     res.end(content);
   }); 
